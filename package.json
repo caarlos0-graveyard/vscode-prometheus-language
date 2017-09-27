@@ -1,0 +1,26 @@
+{
+    "name": "vscode-prometheus",
+    "displayName": "vscode-prometheus",
+    "description": "Prometheus .rules support for vscode",
+    "version": "0.0.1",
+    "publisher": "caarlos0",
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "prometheus",
+            "aliases": ["prometheus"],
+            "extensions": [".rules"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "prometheus",
+            "scopeName": "source.rules",
+            "path": "./syntaxes/prometheus.tmLanguage.json"
+        }]
+    }
+}
