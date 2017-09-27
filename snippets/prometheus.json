@@ -1,0 +1,18 @@
+{
+  "Create a new alert": {
+    "prefix": "alert",
+    "body": [
+      "ALERT $1",
+      "  IF $2",
+      "  FOR $3",
+      "  LABELS {",
+      "    \"$4\" = \"$5\",",
+      "  }",
+      "  ANNOTATIONS {",
+      "    description = \"$7\",",
+      "    summary = \"$6\",",
+      "  }"
+    ],
+    "description": "Create a new ALERT rule"
+  }
+}

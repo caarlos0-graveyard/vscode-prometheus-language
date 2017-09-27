@@ -20,6 +20,10 @@
             "language": "prometheus",
             "scopeName": "source.rules",
             "path": "./syntaxes/prometheus.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "prometheus",
+            "path": "./snippets/prometheus.json"
         }]
     }
 }
