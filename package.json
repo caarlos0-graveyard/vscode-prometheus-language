@@ -4,6 +4,7 @@
     "description": "Prometheus .rules support for vscode",
     "version": "0.0.2",
     "publisher": "caarlos0",
+    "repository": "caarlos0/vscode-prometheus-language",
     "engines": {
         "vscode": "^1.16.0"
     },
