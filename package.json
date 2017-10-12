@@ -2,11 +2,11 @@
     "name": "language-prometheus",
     "displayName": "language-prometheus",
     "description": "Prometheus .rules support for vscode",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "caarlos0",
     "repository": {
-      "type" : "git",
-      "url" : "https://github.com/caarlos0/vscode-prometheus-language.git"
+        "type": "git",
+        "url": "https://github.com/caarlos0/vscode-prometheus-language.git"
     },
     "engines": {
         "vscode": "^1.16.0"
