@@ -31,7 +31,6 @@
 					"Prometheus2"
 				],
 				"extensions": [
-					".rules.yaml",
 					".rules.yml"
 				]
 			}
@@ -44,7 +43,7 @@
 			},
 			{
 				"language": "prometheus2",
-				"scopeName": "source.rules",
+				"scopeName": "source.rules.yml",
 				"path": "./syntaxes/prometheus2.tmLanguage.json"
 			}
 		],
