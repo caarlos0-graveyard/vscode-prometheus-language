@@ -2,7 +2,7 @@
     "name": "language-prometheus",
     "displayName": "language-prometheus",
     "description": "Prometheus .rules support for vscode",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "publisher": "caarlos0",
     "repository": {
         "type": "git",
