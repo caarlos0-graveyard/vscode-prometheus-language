@@ -4,12 +4,13 @@
 		"body": [
 			"- alert: $1",
 			"  expr: $2",
-			"  for: $3",
+			"  for: ${3:1m}",
 			"  labels:",
-			"    $4: $5,",
+			"    ${4:severity}: ${5:warning}",
 			"  annotations:",
-			"    description: $7",
-			"    summary: $6"
+			"    summary: ${6:one short sentence that says what the alert is about}",
+      "    description: ${7:a bit and maybe multi-line description of the alert}",
+      "    playbook: ${8:playbook url}"
 		],
 		"description": "Create a new ALERT rule"
 	}
