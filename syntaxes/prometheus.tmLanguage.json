@@ -1,135 +1,135 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-  "name": "prometheus",
-  "patterns": [
-    {
-      "include": "#comment"
-    },
-    {
-      "include": "#keywords"
-    },
-    {
-      "include": "#number"
-    },
-    {
-      "include": "#time"
-    },
-    {
-      "include": "#regexp"
-    },
-    {
-      "include": "#string"
-    }
-  ],
-  "repository": {
-    "comment": {
-      "begin": "(^\\s+)?(?<=^|\\W)(?=#)(?!#{)",
-      "beginCaptures": {
-        "1": {
-          "name": "punctuation.whitespace.comment.leading.prometheus"
-        }
-      },
-      "end": "(?!\\G)",
-      "patterns": [
-        {
-          "begin": "#",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.comment.prometheus"
-            }
-          },
-          "end": "$",
-          "name": "comment.line.number-sign.prometheus"
-        }
-      ]
-    },
-    "keywords": {
-      "patterns": [
-        {
-          "match": "ALERT|IF|FOR|LABELS|ANNOTATIONS",
-          "name": "keyword.control.prometheus"
-        }
-      ]
-    },
-    "number": {
-      "patterns": [
-        {
-          "match": "[0-9]+(ms|[smhdwy])",
-          "name": "constant.character.prometheus"
-        }
-      ]
-    },
-    "time": {
-      "patterns": [
-        {
-          "match": "\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b",
-          "name": "constant.numeric.prometheus"
-        }
-      ]
-    },
-    "regexp": {
-      "patterns": [
-        {
-          "begin": "~'",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.prometheus"
-            }
-          },
-          "end": "'",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.prometheus"
-            }
-          },
-          "name": "string.regexp.prometheus"
-        }
-      ]
-    },
-    "string": {
-      "patterns": [
-        {
-          "begin": "\"",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.prometheus"
-            }
-          },
-          "end": "\"",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.prometheus"
-            }
-          },
-          "name": "string.quoted.double.prometheus",
-          "patterns": [
-            {
-              "name": "keyword.operator.pipe.prometheus",
-              "match": "\\|"
-            },
-            {
-              "name": "variable.other.prometheus",
-              "match": "[.$][\\w]*"
-            }
-          ]
-        },
-        {
-          "begin": "'",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.prometheus"
-            }
-          },
-          "end": "'",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.prometheus"
-            }
-          },
-          "name": "string.quoted.double.prometheus"
-        }
-      ]
-    }
-  },
-  "scopeName": "source.rules"
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "prometheus",
+	"patterns": [
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#time"
+		},
+		{
+			"include": "#regexp"
+		},
+		{
+			"include": "#string"
+		}
+	],
+	"repository": {
+		"comment": {
+			"begin": "(^\\s+)?(?<=^|\\W)(?=#)(?!#{)",
+			"beginCaptures": {
+				"1": {
+					"name": "punctuation.whitespace.comment.leading.prometheus"
+				}
+			},
+			"end": "(?!\\G)",
+			"patterns": [
+				{
+					"begin": "#",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.prometheus"
+						}
+					},
+					"end": "$",
+					"name": "comment.line.number-sign.prometheus"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"match": "ALERT|IF|FOR|LABELS|ANNOTATIONS",
+					"name": "keyword.control.prometheus"
+				}
+			]
+		},
+		"number": {
+			"patterns": [
+				{
+					"match": "[0-9]+(ms|[smhdwy])",
+					"name": "constant.character.prometheus"
+				}
+			]
+		},
+		"time": {
+			"patterns": [
+				{
+					"match": "\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b",
+					"name": "constant.numeric.prometheus"
+				}
+			]
+		},
+		"regexp": {
+			"patterns": [
+				{
+					"begin": "~'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.prometheus"
+						}
+					},
+					"end": "'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.prometheus"
+						}
+					},
+					"name": "string.regexp.prometheus"
+				}
+			]
+		},
+		"string": {
+			"patterns": [
+				{
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.prometheus"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.prometheus"
+						}
+					},
+					"name": "string.quoted.double.prometheus",
+					"patterns": [
+						{
+							"name": "keyword.operator.pipe.prometheus",
+							"match": "\\|"
+						},
+						{
+							"name": "variable.other.prometheus",
+							"match": "[.$][\\w]*"
+						}
+					]
+				},
+				{
+					"begin": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.prometheus"
+						}
+					},
+					"end": "'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.prometheus"
+						}
+					},
+					"name": "string.quoted.double.prometheus"
+				}
+			]
+		}
+	},
+	"scopeName": "source.rules"
 }

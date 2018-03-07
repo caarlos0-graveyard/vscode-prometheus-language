@@ -1,0 +1,16 @@
+{
+	"Create a new alert": {
+		"prefix": "alert",
+		"body": [
+			"- alert: $1",
+			"  expr: $2",
+			"  for: $3",
+			"  labels:",
+			"    $4: $5,",
+			"  annotations:",
+			"    description: $7",
+			"    summary: $6"
+		],
+		"description": "Create a new ALERT rule"
+	}
+}
