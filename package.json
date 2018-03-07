@@ -1,61 +1,61 @@
 {
-	"name": "language-prometheus",
-	"displayName": "language-prometheus",
-	"description": "Prometheus .rules support for vscode",
-	"version": "0.0.4",
-	"publisher": "caarlos0",
-	"repository": {
-			"type": "git",
-			"url": "https://github.com/caarlos0/vscode-prometheus-language.git"
-	},
-	"engines": {
-			"vscode": "^1.16.0"
-	},
-	"categories": [
-			"Languages"
-	],
-	"contributes": {
-		"languages": [
-			{
-				"id": "prometheus",
-				"aliases": [
-					"Prometheus"
-				],
-				"extensions": [
-					".rules"
-				]
-			},
-			{
-				"id": "prometheus2",
-				"aliases": [
-					"Prometheus2"
-				],
-				"extensions": [
-					".rules.yml"
-				]
-			}
-		],
-		"grammars": [
-			{
-				"language": "prometheus",
-				"scopeName": "source.rules",
-				"path": "./syntaxes/prometheus.tmLanguage.json"
-			},
-			{
-				"language": "prometheus2",
-				"scopeName": "source.rules.yml",
-				"path": "./syntaxes/prometheus2.tmLanguage.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "prometheus",
-				"path": "./snippets/prometheus.json"
-			},
-			{
-				"language": "prometheus2",
-				"path": "./snippets/prometheus2.json"
-			}
-		]
-	}
+    "name": "language-prometheus",
+    "displayName": "language-prometheus",
+    "description": "Prometheus .rules support for vscode",
+    "version": "0.1.0",
+    "publisher": "caarlos0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/caarlos0/vscode-prometheus-language.git"
+    },
+    "engines": {
+        "vscode": "^1.16.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "prometheus",
+                "aliases": [
+                    "Prometheus"
+                ],
+                "extensions": [
+                    ".rules"
+                ]
+            },
+            {
+                "id": "prometheus2",
+                "aliases": [
+                    "Prometheus2"
+                ],
+                "extensions": [
+                    ".rules.yml"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "prometheus",
+                "scopeName": "source.rules",
+                "path": "./syntaxes/prometheus.tmLanguage.json"
+            },
+            {
+                "language": "prometheus2",
+                "scopeName": "source.rules.yml",
+                "path": "./syntaxes/prometheus2.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "prometheus",
+                "path": "./snippets/prometheus.json"
+            },
+            {
+                "language": "prometheus2",
+                "path": "./snippets/prometheus2.json"
+            }
+        ]
+    }
 }
