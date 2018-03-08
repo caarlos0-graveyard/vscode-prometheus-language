@@ -1,7 +1,7 @@
 {
     "name": "language-prometheus",
     "displayName": "language-prometheus",
-    "description": "Prometheus .rules support for vscode",
+    "description": "Syntax highlight and snippets for Prometheus' .rules and Prometheus2' .rules.yml files on VSCode.",
     "version": "0.1.1",
     "publisher": "caarlos0",
     "repository": {
